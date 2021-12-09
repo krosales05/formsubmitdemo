@@ -1,0 +1,123 @@
+@import "bourbon@5.*";
+@import "modularscale@3.*";
+@import "breakpoint";
+
+$nav-bp: 600px;
+button {
+	appearance: none !important;
+	cursor: pointer;
+}
+nav {
+	background: #333;
+}
+.enhanced {
+	.text-fallback {
+		&:before,
+		&:after {
+			display: none !important;
+		}
+		display: none !important;
+	}
+	#menu {
+		display: none;
+		&.open {
+			max-height: 20em;
+		}
+	}
+}
+#menu-toggle {
+	border: none !important;
+	background: transparent !important;
+	color: white;
+	height: 100%;
+	line-height: 0 !important;
+	vertical-align: middle !important;
+	height: 3em;
+	width: 3em;
+	transition: all 180ms;
+	.material-icons {
+		font-size: 2em;
+		vertical-align: middle;
+		text-align: center;
+		margin: 0 auto;
+	}
+	#menu-icon-normal {
+		display: block;
+	}
+	&:hover {
+		color: lightgray;
+	}
+	&:active {
+		// color: gray;
+		opacity: 0.25;
+		transform: scale(0.9);
+	}
+	&:focus {
+		outline: none !important;
+	}
+	&.open {
+		#menu-icon-close {
+			display: block;
+		}
+		#menu-icon-normal {
+			display: none;
+		}
+	}
+}
+#menu-icon-close {
+	display: none;
+}
+#menu {
+	list-style: none !important;
+	// padding: 1em;
+	li {
+		list-style: none !important;
+		// margin-bottom: 1em;
+		// &:hover {
+		// 	background: #000;
+		// }
+		// cursor: pointer;
+		// padding: 1em;
+	}
+	a {
+		text-decoration: none !important;
+		color: white;
+		display: block;
+		width: 100% !important;
+		height: 100% !important;
+		// line-height: 3;
+		padding: 1em;
+		&:hover {
+			background: #000;
+			// color: blue;
+		}
+	}
+}
+
+@include breakpoint($nav-bp) {
+	#menu-toggle {
+		display: none;
+	}
+	#menu {
+		display: block !important;
+		li {
+			display: inline-block;
+		}
+	}
+}
+
+//  Demo Purposes ======================
+
+h1 {
+	line-height: 2;
+	font-size: 24px;
+	font-weight: 600;
+	text-align: center;
+	margin-left: auto;
+	margin-top: 2em;
+	margin-right: auto;
+	color: cornflowerblue;
+}
+main {
+	padding: 2em;
+}

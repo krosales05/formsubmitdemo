@@ -1,63 +1,185 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
-  </head>
-  <body>
-
-    <div class="container mt-5">
-        <h1>Contact Me!</h1>
-        <form class="row g-3" action="https://formsubmit.co/info@centrumcargo.com" method="POST">
-          <!-- Honeypot -->
-          <input type="text" name="_honey" style="display: none;">
-
-          <!-- Disable Captcha -->
-          <input type="hidden" name="_captcha" value="false">
-
-          <input type="hidden" name="_next" value="https://krosales05.github.io/formsubmitdemo/success.html">
-
-          <div class="col-md-6">
-            <label for="firstName" class="form-label">First Name</label>
-            <input type="text" class="form-control" name="name" id="firstName" required>
+<!DOCTYPE html>
+<title>One-page</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> 
+  <link href="one-page.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js">
+  </script>
+  <script src="one-page.js">
+  </script>
+</head>
+    <body>
+      <div class="navbar navbar-inverse navbar-fixed-top opaque-navbar">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNav">
+      <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+      <span></span>
+                      </button>
+                      <span></span>
+        <img src="Centrum-Logo Final.png" alt="Company Logo" width="115" height="55">
+         </div>
+          <div class="collapse navbar-collapse" id="myNav">
+            <ul class=" nav navbar-nav pull-right">
+              <li><a href="#" class="page-scroll">Home</a></li>
+              <li><a href="#about" class="page-scroll">About Us</a></li>
+              <li><a href="#portfolio" class="page-scroll">Services</a></li>
+              <li><a href="#contact" class="page-scroll">Contact Us</a></li>
+            </ul>
           </div>
-          <div class="col-md-6">
-            <label for="lastName" class="form-label">Last Name</label>
-            <input type="text" class="form-control" name="Last&nbsp;Name" id="lastName" required>
+        </div>
+      </div>
+      <section class="banner">
+        <div class="container">
+          <h3><b>Dedicated</b>
+          <br>
+          Transportation Services</h3>
+          <p><br><br>
+          <a href="#contact" class="btn btn-default1">Contact Us!</a></p>
+        </div>
+      </section>
+      <div class="abt" id="about">
+      <div class="jumbotron">
+        <div class="container">
+          <h3>ABOUT US</h3>
+          <hr></hr>
+          <p>CENTRUM CARGO EXPRESS INC, is a land freight carrier in 48 states of the American Union based in<br>
+          Los Angeles California. We comply with all licenses for operations, both Federal and State. Allowing our<br>
+          clients to move any type of cargo, independent of characteristics or volume. Offering competitive prices<br>
+          with a reliable and effective safe service. This will allow you or your customers to have the peace of mind<br>
+          in receiving their merchandise on time. We also have trained and highly experienced staff who will speak<br>
+          in your language. We look forward to starting this journey with you! Scroll below to view all our services.
+          </p>
+          
+        </div> 
+      </div>
+      </div
+      <!--EndofAbout-->
+      
+      <!--PortFolio-->
+      
+      <div class="no-padding text-center" id="portfolio">
+       <div class="container">
+         <h1>OUR SERVICES</h1>
+          <hr></hr>
+        </div>
+        <div class="services-grid">
+          <div class="service service1">
+            <i class="ti-bar-chart"><img src="cargo.png" width="64px" height="64px"></i>
+            <h4>General Transport/Dry Van Freight</h4>
+            <p>This includes products such as textiles,
+              furniture, papers, plastics, electronics, metals</p>
           </div>
-          <div class="col-md-8">
-            <label for="emailInfo" class="form-label">E-mail</label>
-            <input type="email" class="form-control" name="email" id="emailInfo" required>
+          <div class="service service2">
+            <i class="ti-light-bulb"><img src="ltl.png" width="60px" height="60px"></i>
+            <h4>Partial Transport/LTL</h4>
+            <p>This includes any type of dry or frozen shipment,
+              that the space of a full van is not required. Substantially reducing the
+              costs, since only the required space is contracted.</p>
           </div>
-          <div class="col-md-4">
-            <label for="phoneNumber" class="form-label">Phone Number</label>
-            <input type="text" class="form-control" name="phone" id="phoneNumber" placeholder="+1 (415) 867-5309">
+      
+          <div class="service service3">
+            <i class="ti-money"><img src="fridge.png" width="64px" height="64px"></i>
+            <h4>Refrigerated Freight</h4>
+            <p>Load that requires being in a
+              specified temperature such as; meat, seafood, vegetables, fruits, etc.</p>
           </div>
-          <div class="col-md-12">
-            <label for="comments" class="form-label">Comments, questions?</label>
-            <textarea class="form-control" id="comments" name="comments,&nbsp;questions" rows="3" required></textarea>
+          <div class="service service4">
+            <i class="ti-bar-chart"><img src="drayage.png" width="60px" height="60px"></i>
+            <h4>Drayage</h4>
+            <p>It is cargo focused on container transfer
+              from one place to another.</p>
           </div>
-          <div class="col-md-12">
-            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+        <div class="services-grid">
+          <div class="service service5">
+            <i class="ti-light-bulb"><img src="flat.png" width="60px" height="60px"></i>
+            <h4>Flatbed Transport</h4>
+            <p>Most of this cargo is cargo
+              that exceeds the weight that a truck can contain with a regular container or also
+              oversized loads that will not fit on a regular trailer.</p>
           </div>
-        </form>
-    </div>
+      
+          <div class="service service6">
+            <i class="ti-money"><img src="project.png" width="60px" height="60px"></i>
+            <h4>Project Cargo</h4>
+            <p>They are extremely heavy loads or
+              large or very high value. For this reason it requires more time to coordinate and only handles it
+              expert and experienced personnel in this sector.</p>
+          </div>
+          <div class="service service7">
+            <i class="ti-light-bulb"><img src="radioactive.png" width="60px" height="60px"></i>
+            <h4>Hazmat</h4>
+            <p>They are loads that are considered dangerous
+              by the United States Department of Transportation, and your transportation must be only
+              by a truck licensed to transport this type of cargo. As acids, Laboratory chemicals
+              ratório, oil etc.</p>
+          </div>      
+      </div>
+      <section id="contact">
+        <div class="container mt-5">
+          <h1 class="contact">Contact Us!</h1>
+          <hr></hr>
+          <p class="my-font">Ready to start your next project with us? That's great! <br> Let us know what you need and we will get back to you as soon as possible!</p>
+          <form class="row g-3" action="https://formsubmit.co/info@centrumcargo.com" method="POST">
+            <!-- Honeypot -->
+            <input type="text" name="_honey" style="display: none;">
+  
+            <!-- Disable Captcha -->
+            <input type="hidden" name="_captcha" value="false">
+  
+            <input type="hidden" name="_next" value="https://krosales05.github.io/formsubmitdemo/success.html">
+  
+            <div class="col-md-6">
+              <label for="firstName" class="form-label">First Name</label>
+              <input type="text" class="form-control" name="name" id="firstName" required>
+            </div>
+            <div class="col-md-6">
+              <label for="lastName" class="form-label">Last Name</label>
+              <input type="text" class="form-control" name="Last&nbsp;Name" id="lastName" required>
+            </div>
+            <div class="col-md-8">
+              <label for="emailInfo" class="form-label">E-mail</label>
+              <input type="email" class="form-control" name="email" id="emailInfo" required>
+            </div>
+            <div class="col-md-4">
+              <label for="phoneNumber" class="form-label">Phone Number</label>
+              <input type="text" class="form-control" name="phone" id="phoneNumber" placeholder="+1 (415) 867-5309">
+            </div>
+            <div class="col-md-12">
+              <label for="comments" class="form-label">Comments, questions?</label>
+              <textarea class="form-control" id="comments" name="comments,&nbsp;questions" rows="3" required></textarea>
+            </div>
+           
+            <div class="col-md-12">
+              <br>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+      </div>
+  
+      <!-- Optional JavaScript; choose one of the two! -->
+  
+      <!-- Option 1: Bootstrap Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  
+      <!-- Option 2: Separate Popper and Bootstrap JS -->
+      <!--
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+      -->   
+        
+      </section>
+      </div>
+    </body>
 
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
-    -->
-  </body>
 </html>
