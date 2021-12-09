@@ -92,7 +92,7 @@ ul.dropdown-menu {
 .abt p{
   
   color: rgba(255, 255, 255, 0.7);
-  font-size: 16px;
+  font-size: 100%;
 }
 .btn{
   border:none;
