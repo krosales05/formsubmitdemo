@@ -73,7 +73,7 @@ ul.dropdown-menu {
     background-color: black;
 }
 .abt{
-  text-align:center;
+  text-align: left;
 }
 .abt .jumbotron  {
   background-color: #0f69b2;
@@ -82,6 +82,7 @@ ul.dropdown-menu {
   
   color:white;
   font-size:40px; 
+  text-align: center;
   
 }
  hr{
@@ -92,7 +93,7 @@ ul.dropdown-menu {
 .abt p{
   
   color: rgba(255, 255, 255, 0.7);
-  font-size: 100%;
+  font-size: 130%;
 }
 .btn{
   border:none;
