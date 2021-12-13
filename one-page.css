@@ -469,6 +469,9 @@ hr {
     width:33.33333%;
     
   }
+  .center{
+    margin-left: 40%;
+  }
 }
 
 .container1 .title{
@@ -614,4 +617,7 @@ slide p{
   30% {left: -100%; width: 100%;}
   30.0001% {left: -100%; width: 0%;}
   100% {left: 100%; width: 0%;}  
+}
+.center{
+  margin-left: 46%;
 }
