@@ -572,6 +572,7 @@ animation-delay: -1s;
 background-image: url("trailer.jpg");
 background-size: cover;
 background-position: center;
+
 }
 slide:nth-child(2){
   
@@ -579,12 +580,14 @@ slide:nth-child(2){
   background-image: url("banner2.jpg");
   background-size: cover;
   background-position: center;
+  
   }
 slide:nth-child(3){
     animation-delay: 5s;
     background-image: url("banner5.jpg");
     background-size: cover;
     background-position: center;
+   
     }
 slide:nth-child(4){
       left: 0%;
@@ -592,6 +595,7 @@ slide:nth-child(4){
       background-image: url("banner4.jpg");
       background-size: cover;
       background-position: center;
+      
       }
             
 slide p{
